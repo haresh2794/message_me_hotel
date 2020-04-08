@@ -11,45 +11,28 @@
   
 </h2>
 <div class="ui grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui feed">
   
-  
-<div class="twelve wide column">
-     <div class="ui fluid raised card chatbox">
-  <div class="content">
-<div class="ui feed">
-  
-  <div class="event">
-    <div class="content">
-      <div class="summary">
-         <tbody>
-        <% @messages.each do |message| %>
-        <tr>
-             <td><%= message.user.username %></td>: 
-            <td><%= message.body %> </td>
-           
-        </tr>
-        <% end %>
-    </tbody>
+          <%= render @messages %>
+        
+        </div>
       </div>
-    </div>
-  </div>
-  
-  
-</div>
-</div>
- <div class="extra content">
-    <form class="ui reply form">
+   <div class="extra content">
+      <form class="ui reply form">
     <div class="ui fluid icon input">
-  <input type="text" placeholder="Enter message">
-  <i class="users icon"></i>
+      <input type="text" placeholder="Enter message">
+      <i class="users icon"></i>
 
     <div class="ui blue labeled icon button">
       <i class="icon edit button"></i>
     </div>
     </div>
-  </form>
+      </form>
+   </div>
   </div>
-</div>
 </div>
 
 
