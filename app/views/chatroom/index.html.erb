@@ -21,31 +21,20 @@
   <div class="event">
     <div class="content">
       <div class="summary">
-         <a>Elliot Fu: </a>Text Messages
+         <tbody>
+        <% @messages.each do |message| %>
+        <tr>
+             <td><%= message.user.username %></td>: 
+            <td><%= message.body %> </td>
+           
+        </tr>
+        <% end %>
+    </tbody>
       </div>
     </div>
   </div>
-  <div class="event">
-    <div class="content">
-      <div class="summary">
-         <a>Stevie Feliciano: </a>Text Messages
-      </div>
-    </div>
-  </div>
-  <div class="event">
-    <div class="content">
-      <div class="summary">
-         <a>Helen Troy: </a>Text Messages
-      </div>
-    </div>
-  </div>
-  <div class="event">
-    <div class="content">
-      <div class="summary">
-         <a>Christian Rocha</a> signed up for the  site.
-      </div>
-    </div>
-  </div>
+  
+  
 </div>
 </div>
  <div class="extra content">
