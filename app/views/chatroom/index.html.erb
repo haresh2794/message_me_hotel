@@ -21,11 +21,11 @@
         </div>
       </div>
    <div class="extra content">
-     <%= form_for(@message,html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %> <!--handling via ajax remote: true -->
+     <%= form_for(@message,html: {class: "ui reply form", role: "form"}, placeholder: "Enter message", url: message_path, remote: true) do |f| %> <!--handling via ajax remote: true -->
       
     <div class="ui fluid icon input">
       <%= f.text_field :body %>
-      <%= f.button '<i class="bordered blue edit icon"></i>'.html_safe %>
+      <%= f.button '<i class="blue paper plane icon play"></i>'.html_safe %>
      
    
     </div>
